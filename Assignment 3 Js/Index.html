@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body >
+    
+        <div class="text-center">
+            <h1 class="m-auto my-5">BookMarks</h1>
+
+        </div>
+        
+    
+
+    <div class="row g-2 m-auto w-75 mb-5 search py-4">
+        <h2 class="text-center py-2"> <i class="fa fa-bookmark" aria-hidden="true"></i> Bookmark your favorite sites <i class="fa fa-bookmark" aria-hidden="true"></i></h2>
+        <label for="#siteName">Website Name</label>
+        <input placeholder="Site Name..." id="siteName" class="mb-3 py-1 col-12" type="text">
+        <label for="#siteLink">Website Link</label>
+        <input placeholder="Site Link..." id="siteLink" class="mb-3 py-1 col-12" type="text">
+        <button onclick="addsite()" class="mx-auto btn btn-danger col-1">Submit</button>
+    </div>
+
+
+<table class="table mt-3 m-auto text-center w-75">
+    <thead>
+        <tr>
+            <td>Index</td>
+            <td>Site Name</td>
+            <td>Visit</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+
+    <tbody id="DataLocation">
+
+
+
+    </tbody>
+</table>
+
+
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/Main.js"></script>
+</body>
+</html>
